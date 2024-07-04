@@ -1,0 +1,23 @@
+<!--chsnge this one -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users Pantry - Community</title>
+</head>
+<body>
+  <% include('../partials/_navbar.ejs') %>
+  <h1>Community Page</h1>
+  <ul>
+    <% allUsers.forEach(user => { %>
+      <li>
+        <a href="/users/<%= user._id %>"><%= user.username %></a>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
+
+

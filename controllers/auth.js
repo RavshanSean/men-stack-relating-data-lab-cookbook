@@ -45,6 +45,14 @@ router.post('/sign-up', async (req, res) => {
   }
 });
 
+
+///create functionality crate route for 3
+
+
+
+
+
+////
 router.post('/sign-in', async (req, res) => {
   try {
     // First, get the user from the database
