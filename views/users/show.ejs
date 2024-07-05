@@ -9,15 +9,13 @@
   <% include('../partials/_navbar.ejs') %>
   <h1>Community Page</h1>
   <ul>
-    <% users.forEach(user => { %>
+    <% users.pantry.forEach(user => { %>
       <li>
-        <a href="/users/<%= user._id %>"><%= user.username %></a>
-        <a href="/users/<%= user._id %>"><%= user.pantry.name %></a> 
+        <p><%= user.name %></p>
+        <p ><%= user.ingredients %></p> 
+        <p ><%= user.cookTime %></p> 
       </li>
     <% }); %>
   </ul>
 </body>
 </html>
-
-
-
